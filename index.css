@@ -7,9 +7,18 @@ body{
     color: #00FF00;
 }
 
+#vikt-gif{
+    color: #00FF00;
+    height: 75px;
+}
+
 #nav-fluid{
     background-color:  #ffffff00;
     color: #00FF00;
+}
+
+#nav-fluid a{
+     margin-right: 70%;
 }
 
 #toggle-btn{
@@ -25,24 +34,28 @@ body{
 #hi{
     margin-top: 10%;
     width: 50%;
-    height: auto;
+    height: 350px;
     margin-bottom: 0px;
     color: #00FF00;
 }
 
+
+
 #mypic img{
     width: 185%;
+    height: 500px;
 }
 
 #home-div{
-    
     width: 100%;
+    height: 300px;
 }
 
 #home-div-1{
     margin-left: 0px;
     padding-left: 0px;
     width: 100%;
+    height: 500px;
 }
 
 #home-links{
@@ -73,7 +86,7 @@ body{
 /* background */
 
 #myVideo {
-    position: absolute;
+  position: absolute;
   inset: 0;
   display: block;
   width: 100%;
@@ -81,3 +94,56 @@ body{
   object-fit: cover;
   z-index: -1;
   }
+
+  /* SERVICES */
+  #services{
+    height: 500px;
+  }
+
+
+
+  /*Response */
+  @media (min-width: 200px) and (max-width: 767px) {
+    #nav-fluid a{
+        margin-right: 40%;
+   }
+
+   #hi{
+    margin-top: 40%;
+    width: 100%;
+    height: 350px;
+  }
+
+  #myVideo{
+    z-index: -2;
+  }
+
+#mypic{
+    display: inline-flex;
+    justify-self: center;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    margin-right: 20%;
+}
+
+#myVideo{
+    height: 100%;
+}
+
+#home-div{
+    width: 100%;
+    height: 100px;
+}
+
+    
+
+
+    }
+
+  @media (max-width: 767px)  {
+
+    
+
+  }
+
