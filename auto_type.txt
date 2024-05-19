@@ -1,0 +1,13 @@
+var demo_input = document.getElementById('demo_input');
+
+var type_this = "try this example";
+var index = 0;
+
+window.next_letter = function() {
+    if (index <= type_this.length) {
+        demo_input.value = type_this.substr(0, index++);
+        setTimeout("next_letter()", 50);
+    }
+}
+
+next_letter();

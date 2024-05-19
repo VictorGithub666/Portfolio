@@ -32,12 +32,24 @@ body{
 
 /* HOME BODY */
 
+input{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    size: 900;
+    background-color: transparent;
+    border: none;
+    color: #00FF00;
+    text-align: center;
+}
+
 #hi{
     margin-top: 10%;
     width: 50%;
     height: 350px;
     margin-bottom: 0px;
     color: #00FF00;
+    text-align: center;
+    
 }
 
 #mypic{
@@ -70,15 +82,19 @@ body{
 
 /* buttons */
 #hire-me{
+    margin-left: 40%;
     background-color: #00FF00;
     color: black;
 }
 #hire-me:hover{
+    
     background-color: transparent;
     color: #00FF00;
 }
 
 #lets-talk{
+    margin-left: 40%;
+    margin-top: 3%;
     border-color: #00FF00;
     color: #00FF00;
 }

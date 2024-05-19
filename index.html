@@ -71,15 +71,15 @@
         <div id="home-div-1" class="row">
             <!-- Hello -->
             <!-- hi -->
-          <div id="hi" class="col-6 col-sm-3">
-            <h1 class="hello">Hi, I'm Victor Kasini </h1> 
+          <div id="hi" class="col-6 col-sm-3 d-flex flex-column justify-content-center">
+            <input style="font-size: 35px;"  id="hello_anim" />  
              <h2>a front-end developer.</h2>
 
              <p>Experienced software engineer adept at crafting robust solutions. Proficient in multiple languages and frameworks, dedicated to delivering high-quality code. Let's innovate together. Hire me for your next project!</p>
 
-             <button id="hire-me" type="button" class="btn btn-success">Hire Me</button>
+             <button  id="hire-me" type="button" class="btn btn-success w-25">Hire Me</button>
 
-             <button id="lets-talk" type="button" class="btn btn-outline-success">Lets Talk</button>
+             <button id="lets-talk" type="button" class="btn btn-outline-success w-25">Lets Talk</button>
 
              <div id="home-links">
               
@@ -119,6 +119,29 @@
     <!-- BOXICONS JS -->
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Animation -->
+    <script>
+      var hello_anim = document.getElementById('hello_anim');
+
+      var type_this = "Hi, I'm Victor Kasini";
+      var index = 0;
+
+      window.next_letter = function() {
+
+      
+          if (index <= type_this.length) {
+              hello_anim.value = type_this.substr(0, index++);
+              setTimeout("next_letter()", 150);
+           } 
+
+        
+        }
+          
+            next_letter();
+            
+
+    </script>
     
 </body>
 </html>
