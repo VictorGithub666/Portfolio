@@ -45,7 +45,7 @@ input{
 #hi{
     margin-top: 10%;
     width: 50%;
-    height: 350px;
+    height: 100vh;
     margin-bottom: 0px;
     color: #00FF00;
     text-align: center;
@@ -209,8 +209,12 @@ input{
    
    #hi{
     margin-top: 40%;
-    width: 100%;
+    width: 100vw;
     height: 350px;
+  }
+
+  #hello_anim{
+    font-weight: 350;
   }
 
         #myVideo{
