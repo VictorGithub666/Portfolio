@@ -112,7 +112,7 @@ input{
   inset: 0;
   display: block;
   width: 100vw;
-  height: 100vh;
+  height:max-content;
   object-fit: cover;
   z-index: -1;
   }
@@ -121,7 +121,7 @@ input{
 
  #services{
     background-image: linear-gradient(to bottom, #000000 40%, #00FF00 120%);
-    height: 100vh;
+    height: max-content;
  }
 
  #serv-body{
@@ -197,7 +197,39 @@ input{
 #resp-back{
     display: none;
 }
+
+/* CONTACT FORM */
+
+form{
+    color: #00FF00;
+}
+form input{
+    color: #00FF00;
+    border: solid;
+    border-color: #00FF00;
+    border-width: 1px;
+    border-radius: 7%;
+    margin: 1%;
+    align-content: center;
+}
+
+form textarea{
+    background-color: transparent;
+    color: #00FF00;
+    border-color: #00FF00;
+    width: 80%;
+}
  
+form div{
+    display: inline;
+    align-items: center;
+    width: 50%;
+    padding-top: 5%;
+}
+
+#subject{
+    width: 80%;
+}
 
   
   
@@ -217,9 +249,9 @@ input{
     font-weight: 350;
   }
 
-        #myVideo{
+        /* #myVideo{
             z-index: -2;
-        }
+        } */
 
         #mypic{
             display: inline-flex;
@@ -231,7 +263,7 @@ input{
         }
 
         #myVideo{
-            height: 100%;
+            height: 150vh;
         }
 
         #home-div{
@@ -242,7 +274,7 @@ input{
         /* SERVICES */
 
         #services{
-            height: 300vh;
+            height: max-content;
         }
 
         #serv-body .row{
@@ -288,6 +320,21 @@ input{
 
          #card-bd2 {
             display: none;
+        }
+        /* CONTACT FORM */
+
+        #form-card{
+            margin-top: 10%;
+        }
+
+        form{
+            display: block;
+            align-items: center;
+        }
+
+       form div{
+            display: block;
+            margin: auto;
         }
 
         
