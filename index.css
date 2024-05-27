@@ -45,8 +45,7 @@ input{
 #hi{
     margin-top: 10%;
     width: 50%;
-    height: 100vh;
-    margin-bottom: 0px;
+    height: max-content;
     color: #00FF00;
     text-align: center;
     
@@ -66,7 +65,7 @@ input{
 }
 
 #home-div{
-    height: 300px;
+    height: max-content;
 }
 
 #home-div-1{
@@ -112,7 +111,7 @@ input{
   inset: 0;
   display: block;
   width: 100vw;
-  height:max-content;
+  height: max-content;
   object-fit: cover;
   z-index: -1;
   }
@@ -231,6 +230,51 @@ form div{
     width: 80%;
 }
 
+/* FOOTER */
+#foot{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+
+.foot-contacts{
+    display: inline;
+    color: #00FF00;
+    align-self: center;
+    padding-left: 5%;
+}
+.foot-contacts h5{
+    margin-left: 16%;
+}
+
+.foot-about{
+    display: inline;
+    color: #00FF00;
+    align-self: center;
+    padding-left: 5%;
+}
+
+#foot-about h5{
+    align-self: center;
+}
+
+.foot-links{
+    display: inline;
+
+}
+
+
+#foot-gif{
+    display: inline;
+}
+
+
+
+
   
   
 
@@ -263,7 +307,7 @@ form div{
         }
 
         #myVideo{
-            height: 150vh;
+            height: 100vh;
         }
 
         #home-div{
@@ -337,6 +381,28 @@ form div{
             margin: auto;
         }
 
+        #foot{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #foot-gif{
+            align-self: center;
+        }
+
+        #foot-contacts{
+            align-self: center;
+            margin-left: 0%;
+        }
+
+        #foot-contacts h5{
+            align-self: center;
+        }
+
+       
+
+        
         
 
 }
