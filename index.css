@@ -1,5 +1,12 @@
 body{
     display: block;
+    height: 100%;
+    margin-bottom: 0%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /* NAV */
@@ -48,7 +55,6 @@ input{
     height: max-content;
     color: #00FF00;
     text-align: center;
-    
 }
 
 #mypic{
@@ -60,23 +66,25 @@ input{
 #mypic img{
     position: absolute;
     width: 185%;
-    height: 500px;
+    height: 400px;
     object-fit: fill;
+    
 }
 
 #home-div{
-    height: max-content;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #home-div-1{
     margin-left: 0px;
     padding-left: 0px;
     width: 100%;
-    height: 500px;
 }
 
 #home-links{
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 /* buttons */
@@ -111,7 +119,7 @@ input{
   inset: 0;
   display: block;
   width: 100vw;
-  height: max-content;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
   }
@@ -120,7 +128,8 @@ input{
 
  #services{
     background-image: linear-gradient(to bottom, #000000 40%, #00FF00 120%);
-    height: max-content;
+    height: 100%;
+    
  }
 
  #serv-body{
@@ -230,49 +239,47 @@ form div{
     width: 80%;
 }
 
+#sub-mit{
+    background-color: #00FF00;
+    margin-bottom: 2%;
+}
+#sub-mit:hover{
+    background-color: #000000;
+
+}
+
 /* FOOTER */
 #foot{
     display: flex;
     flex-direction: row;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #000000;
-}
-
-.foot-contacts{
-    display: inline;
     color: #00FF00;
-    align-self: center;
-    padding-left: 5%;
-}
-.foot-contacts h5{
-    margin-left: 16%;
 }
 
-.foot-about{
+.img{
     display: inline;
-    color: #00FF00;
-    align-self: center;
-    padding-left: 5%;
+    float: left;
+    width: 30%;
 }
 
-#foot-about h5{
-    align-self: center;
-}
-
-.foot-links{
-    display: inline;
-
-}
-
-
-#foot-gif{
+.img img{
     display: inline;
 }
 
+.contacts-foot{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    background-color: #000000;
+}
 
+.serv-foot{
+    display: inline-block;
+    background-color: #000000;
+}
 
 
   
@@ -381,29 +388,20 @@ form div{
             margin: auto;
         }
 
-        #foot{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .contacts-foot{
+            width: 70%;
         }
 
-        #foot-gif{
-            align-self: center;
+        .serv-foot{
+            display: block;
         }
-
-        #foot-contacts{
-            align-self: center;
-            margin-left: 0%;
-        }
-
-        #foot-contacts h5{
-            align-self: center;
-        }
-
-       
 
         
         
 
 }
+
+    
+
+    
 
