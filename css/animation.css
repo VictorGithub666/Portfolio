@@ -37,7 +37,7 @@
 }
 
 .img{
-    animation: ftimg 1.4s ease 0.1s 1 normal backwards;     
+    animation: ftimg 1s ease 0.1s 1 normal backwards;     
 }
 
 @keyframes ftimg {
@@ -61,5 +61,21 @@
 
     to {
         transform: translate(450px,0px);
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .contacts-foot{
+        animation: ftcont 1.4s ease 0.1s 1 reverse forwards;     
+    }
+    
+    @keyframes ftcont {
+        from {
+            transform: translate(-10px,0px); 
+        }
+    
+        to {
+            transform: translate(450px,0px);
+        }
     }
 }
