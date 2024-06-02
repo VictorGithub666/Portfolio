@@ -122,6 +122,22 @@
     }
 }
 
+/* CONTACT */
+#form-card{
+    animation: transright 1s ease 0.1s 1 reverse forwards;     
+}
+
+@keyframes transright {
+    from {
+        transform: translate(0px,0px); 
+    }
+
+    to {
+        transform: translate(400px,0px);
+    }
+}
+
+
 
 /* RESPONSE */
 
