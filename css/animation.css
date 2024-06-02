@@ -51,18 +51,50 @@
 }
 
 .serv-foot{
-    animation: ftserv 1.4s ease 0.1s 1 reverse forwards;     
+    animation: ftserv 1s ease 0.1s 1 reverse forwards;     
 }
 
 @keyframes ftserv {
     from {
-        transform: translate(-10px,0px); 
+        transform: translate(0px,0px); 
     }
 
     to {
-        transform: translate(450px,0px);
+        transform: translate(400px,0px);
     }
 }
+
+/* SERVICES */
+#transleft{
+    animation: transleft 1s ease 0.1s 1 normal backwards;     
+}
+
+@keyframes transleft {
+    from {
+        transform: translate(-400px,0px); 
+    }
+
+    to {
+        transform: translate(0px,0px);
+    }
+}
+
+#transright{
+    animation: transright 1s ease 0.1s 1 reverse forwards;     
+}
+
+@keyframes transright {
+    from {
+        transform: translate(0px,0px); 
+    }
+
+    to {
+        transform: translate(400px,0px);
+    }
+}
+
+
+/* RESPONSE */
 
 @media (min-width: 200px) and (max-width: 767px) {
     .contacts-foot{
@@ -71,7 +103,7 @@
     
     @keyframes ftcont {
         from {
-            transform: translate(-10px,0px); 
+            transform: translate(0px,0px); 
         }
     
         to {
