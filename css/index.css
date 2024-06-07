@@ -2,14 +2,16 @@ body{
     display: block;
     height: 100%;
     z-index: -100;
-    background-color: #5f7276;
+    background-color: #000000;
 }
+
+
 
 .ball {
     position: absolute;
     border-radius: 100%;
-    opacity: 0.7;
-    z-index: -4;
+    opacity: 0.5;
+    z-index: 1;
   }
 
 
@@ -21,6 +23,7 @@ body{
 /* NAV */
 #my-nav{
     color: #fab746;
+    background-color: #000000;
     position: sticky;
     top: 0;
     z-index: 66;
@@ -109,6 +112,7 @@ input{
     
     background-color: transparent;
     color: #fab746;
+    border-color: #fab746;
 }
 
 #lets-talk{
@@ -262,7 +266,7 @@ form div{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: transparent;
     color: #fab746;
 }
 
@@ -333,6 +337,7 @@ form div{
 
         #services{
             height: max-content;
+            background-color: transparent;
         }
 
         #serv-body .row{
