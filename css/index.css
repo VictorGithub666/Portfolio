@@ -14,29 +14,29 @@ body{
 
 /* NAV */
 #my-nav{
-    color: #00FF00;
+    color: #fab746;
     position: sticky;
     top: 0;
     z-index: 66;
 }
 
 #vikt-gif{
-    color: #00FF00;
+    color: #fab746;
     height: 75px;
 }
 
 #nav-fluid{
     background-color:  #ffffff00;
-    color: #00FF00;
+    color: #fab746;
 }
 
 
 
 #toggle-btn{
-    border-color: #00FF00;
+    border-color: #fab746;
 }
 #toggle-btn:active{
-    border-color: #00FF00;
+    border-color: #fab746;
 }
 
 
@@ -48,7 +48,7 @@ input{
     size: 900;
     background-color: transparent;
     border: none;
-    color: #00FF00;
+    color: #fab746;
     text-align: center;
 }
 
@@ -56,7 +56,7 @@ input{
     margin-top: 10%;
     width: 50%;
     height: max-content;
-    color: #00FF00;
+    color: #fab746;
     text-align: center;
 }
 
@@ -96,24 +96,24 @@ input{
 /* buttons */
 #hire-me{
     margin-left: 40%;
-    background-color: #00FF00;
+    background-color: #fab746;
     color: black;
 }
 #hire-me:hover{
     
     background-color: transparent;
-    color: #00FF00;
+    color: #fab746;
 }
 
 #lets-talk{
     margin-left: 40%;
     margin-top: 3%;
-    border-color: #00FF00;
-    color: #00FF00;
+    border-color: #fab746;
+    color: #fab746;
 }
 
 #lets-talk:hover{
-    background-color: #00FF00;
+    background-color: #fab746;
     color: black;
 }
 
@@ -153,7 +153,7 @@ input{
  }
  .card{
     background-image: linear-gradient(to bottom, #000000 24%, #000000 100%);
-    border-color: #00FF00;
+    border-color: #fab746;
     
  }
 
@@ -163,8 +163,8 @@ input{
     background-color: #000000;
     border: solid;
     border-width: 1px;
-    border-color: #00FF00;
-    color: #00FF00;
+    border-color: #fab746;
+    color: #fab746;
 }
 
 #about-card ul li{
@@ -182,7 +182,7 @@ input{
 }
 
 #about-card ul li ul .progress .progress-bar{
-    background-color: #00FF00;
+    background-color: #fab746;
     color: #000000;  
 }
 
@@ -205,12 +205,12 @@ input{
 /* CONTACT FORM */
 
 form{
-    color: #00FF00;
+    color: #fab746;
 }
 form input{
-    color: #00FF00;
+    color: #fab746;
     border: solid;
-    border-color: #00FF00;
+    border-color: #fab746;
     border-width: 1px;
     border-radius: 7%;
     margin: 1%;
@@ -219,8 +219,8 @@ form input{
 
 form textarea{
     background-color: transparent;
-    color: #00FF00;
-    border-color: #00FF00;
+    color: #fab746;
+    border-color: #fab746;
     width: 80%;
 }
  
@@ -236,7 +236,7 @@ form div{
 }
 
 #sub-mit{
-    background-color: #00FF00;
+    background-color: #fab746;
     margin-bottom: 2%;
 }
 #sub-mit:hover{
@@ -252,7 +252,7 @@ form div{
     bottom: 0;
     width: 100%;
     background-color: #000000;
-    color: #00FF00;
+    color: #fab746;
 }
 
 .img{

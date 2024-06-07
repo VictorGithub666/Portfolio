@@ -7,3 +7,11 @@ rgb: rgb(0,255,0);
 ELECTRIC BLUE
 
 hex: #7DF9FF
+
+Casablanca
+
+hex: #fab746
+
+Nevada
+
+hex: #5f7276
