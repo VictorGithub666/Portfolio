@@ -134,6 +134,11 @@ input{
  }
 
 
+ .card-body{
+    border-color: #fab746;
+ }
+
+
  .row{
     width: 100vw;
  }
