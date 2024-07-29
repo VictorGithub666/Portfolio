@@ -122,7 +122,7 @@ input{
 
 /* buttons */
 #hire-me{
-    margin-left: 40%;
+    margin-left: 5%;
     background-color: #fab746;
     color: black;
 }
@@ -134,7 +134,7 @@ input{
 }
 
 #lets-talk{
-    margin-left: 40%;
+    margin-left: 5%;
     margin-top: 3%;
     border-color: #fab746;
     color: #fab746;
