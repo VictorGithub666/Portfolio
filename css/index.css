@@ -122,7 +122,6 @@ input{
 
 /* buttons */
 #hire-me{
-    margin-left: 5%;
     background-color: #fab746;
     color: black;
 }
@@ -134,7 +133,6 @@ input{
 }
 
 #lets-talk{
-    margin-left: 5%;
     margin-top: 3%;
     border-color: #fab746;
     color: #fab746;
@@ -162,7 +160,7 @@ input{
  }
 
 
- .card-body{
+ .card-body-services{
     border-color: #fab746;
     height: 150px;
  }
@@ -190,6 +188,28 @@ input{
     background-image: linear-gradient(to bottom, #000000 24%, #000000 100%);
     border-color: #fab746;
     
+ }
+
+ /* PROJECTS */
+
+ #card-body{
+    border-color: #fab746;
+ }
+
+ #project{
+    text-decoration: none;
+ }
+
+ #project-image{
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 5cap;
+ }
+
+ #view-web{
+    object-fit: contain;
  }
 
  /* ABOUT */
