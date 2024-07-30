@@ -1,13 +1,6 @@
 /* HOME */
 #hi{
-    /* animation-name: l2r;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 5ms;
-    animation-iteration-count: 0;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running; */
+   
     animation: l2r 2s ease 0.1s 1 normal backwards;
         
 }
@@ -28,7 +21,7 @@
 
 @keyframes r2l {
     from {
-        transform: translate(-0px,0px); 
+        transform: translate(0px,0px); 
     }
 
     to {
