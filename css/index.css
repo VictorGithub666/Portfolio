@@ -100,7 +100,7 @@ input{
 
 #mypic img{
     position: absolute;
-    width: 100vw;
+    width: 40vw;
     height: 400px;
     object-fit: fill;
     
