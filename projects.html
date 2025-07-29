@@ -28,6 +28,86 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      /* Custom styles for better project layout */
+      .project-card {
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        margin-bottom: 2rem;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+      .project-content {
+        padding: 2rem;
+      }
+      .project-img-container {
+        position: relative;
+        overflow: hidden;
+        min-height: 300px;
+      }
+      .project-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      .project-card:hover .project-img {
+        transform: scale(1.03);
+      }
+      .screenshot-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .screenshot-gallery img {
+        border-radius: 0.5rem;
+        border: 1px solid #dee2e6;
+        transition: transform 0.3s ease;
+      }
+      .screenshot-gallery img:hover {
+        transform: scale(1.02);
+      }
+      .section-divider {
+        border-top: 2px solid #dee2e6;
+        margin: 4rem 0;
+      }
+      .section-title {
+        position: relative;
+        margin-bottom: 3rem;
+      }
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(to right, #3a7bd5, #00d2ff);
+      }
+      @media (max-width: 992px) {
+        .project-img-container {
+          min-height: 250px;
+          order: -1;
+        }
+        .project-content {
+          padding: 1.5rem;
+        }
+        .screenshot-gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+      .btn-project {
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+      }
+      .tech-badge {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.75rem;
+      }
+    </style>
   </head>
   <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
@@ -73,60 +153,127 @@
             <h1 class="display-5 fw-bolder mb-0">
               <span class="text-gradient d-inline">Projects</span>
             </h1>
+            <p class="lead mt-3">Some of my recent work and contributions</p>
           </div>
-          <div class="row gx-5 justify-content-center">
-            <div class="col-lg-11 col-xl-9 col-xxl-8">
-              <!-- Project Card 1-->
-              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">StudyVille</h2>
-                      <p>
+          <div class="row justify-content-center g-4">
+            <!-- Project Card 1-->
+            <div class="col-lg-10">
+              <div class="card shadow rounded-4 border-0 project-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6 project-img-container">
+                    <img
+                      src="assets/kafoca.png"
+                      alt="StudyVille Project"
+                      class="project-img"
+                    />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="project-content">
+                      <h2 class="fw-bolder mb-3">StudyVille</h2>
+                      <p class="mb-4">
                         A comprehensive educational platform designed to enhance
                         learning experiences. Built with modern web technologies
                         to provide responsive and interactive features for
                         students and educators.
                       </p>
-                      <a
-                        href="http://new.kmstudyville.com/"
-                        class="btn btn-primary"
-                        target="_blank"
-                        >View Project</a
-                      >
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary tech-badge">HTML</span>
+                        <span class="badge bg-secondary tech-badge">CSS</span>
+                        <span class="badge bg-success tech-badge"
+                          >JavaScript</span
+                        >
+                      </div>
+                      <div class="mt-4">
+                        <a
+                          href="http://new.kmstudyville.com/"
+                          class="btn btn-primary btn-project"
+                          target="_blank"
+                          >View Project</a
+                        >
+                      </div>
                     </div>
-                    <img
-                      class="img-fluid"
-                      src="assets/Kafoca.png"
-                      alt="StudyVille Project"
-                    />
                   </div>
                 </div>
               </div>
-              <!-- Project Card 2-->
-              <div class="card overflow-hidden shadow rounded-4 border-0">
-                <div class="card-body p-0">
-                  <div class="d-flex align-items-center">
-                    <div class="p-5">
-                      <h2 class="fw-bolder">CNR (Question and Response)</h2>
-                      <p>
-                        An interactive question and response platform that
-                        facilitates communication and knowledge sharing.
-                        Features include real-time updates, user authentication,
-                        and a clean, intuitive interface.
-                      </p>
-                      <a
-                        href="https://qnr-1.onrender.com/"
-                        class="btn btn-primary"
-                        target="_blank"
-                        >View Project</a
-                      >
-                    </div>
+            </div>
+
+            <!-- Project Card 2-->
+            <div class="col-lg-10">
+              <div class="card shadow rounded-4 border-0 project-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6 project-img-container">
                     <img
-                      class="img-fluid"
-                      src="assets/Cnr.png"
+                      src="assets/yurei.png"
                       alt="CNR Project"
+                      class="project-img"
                     />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="project-content">
+                      <h2 class="fw-bolder mb-3">YUREI</h2>
+                      <p class="mb-4">
+                        A website for the youth empowerment. Brings together the
+                        youth in order to eduacate and support themselves in
+                        this fast changing world.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary tech-badge"
+                          >Bootstrap</span
+                        >
+                        <span class="badge bg-secondary tech-badge">HTML</span>
+                        <span class="badge bg-success tech-badge"
+                          >JavaScript</span
+                        >
+                      </div>
+                      <div class="mt-4">
+                        <a
+                          href="https://qnr-1.onrender.com/"
+                          class="btn btn-primary btn-project"
+                          target="_blank"
+                          >View Project</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3-->
+            <div class="col-lg-10">
+              <div class="card shadow rounded-4 border-0 project-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6 project-img-container">
+                    <img
+                      src="assets/hovermode.png"
+                      alt="CNR Project"
+                      class="project-img"
+                    />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="project-content">
+                      <h2 class="fw-bolder mb-3">HoverMode</h2>
+                      <p class="mb-4">
+                        HoverMode is a drone company offering drone services and
+                        training. They also have a STEM education wing for
+                        children aged 4-16.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary tech-badge">ReactJS</span>
+                        <span class="badge bg-secondary tech-badge">HTML</span>
+                        <span class="badge bg-success tech-badge"
+                          >Bootstrap</span
+                        >
+                      </div>
+                      <div class="mt-4">
+                        <a
+                          href="https://www.hovermode.co.ke"
+                          class="btn btn-primary btn-project"
+                          target="_blank"
+                          >View Project</a
+                        >
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -134,6 +281,295 @@
           </div>
         </div>
       </section>
+
+      <!-- Unhosted Projects Section -->
+      <section class="py-5">
+        <div class="container px-5 mb-5">
+          <div class="text-center mb-5">
+            <h2 class="section-title">Unhosted Projects</h2>
+            <p class="lead">Projects I've developed with screenshots</p>
+          </div>
+          <div class="row justify-content-center g-4">
+            <!-- EventPal Project -->
+            <div class="col-lg-10">
+              <div class="card shadow rounded-4 border-0 project-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6 project-img-container">
+                    <img
+                      src="assets/Eventpal User Screenshots/DASHBOARD.png"
+                      alt="EventPal Project"
+                      class="project-img"
+                    />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="project-content">
+                      <h2 class="fw-bolder mb-3">
+                        EventPal - Events Management System
+                      </h2>
+                      <p class="mb-4">
+                        A comprehensive events management system with user and
+                        admin interfaces. Features include event creation,
+                        ticketing, user management, and analytics.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary tech-badge">ReactJS</span>
+                        <span class="badge bg-secondary tech-badge"
+                          >Bootstrap</span
+                        >
+                        <span class="badge bg-success tech-badge">Node.js</span>
+                        <span class="badge bg-info tech-badge">Express</span>
+                        <span class="badge bg-warning tech-badge">MySQL</span>
+                      </div>
+
+                      <!-- EventPal Carousel -->
+                      <div
+                        id="eventpalCarousel"
+                        class="carousel slide mt-4"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="3"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner rounded-3">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/Eventpal User Screenshots/DASHBOARD.png"
+                              class="d-block w-100"
+                              alt="EventPal Dashboard"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal User Screenshots/LOGIN.png"
+                              class="d-block w-100"
+                              alt="EventPal Events"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal User Screenshots/PASTEVENTS.png"
+                              class="d-block w-100"
+                              alt="EventPal Events"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal User Screenshots/REGISTER.png"
+                              class="d-block w-100"
+                              alt="EventPal Events"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal User Screenshots/UPCOMING EVENTS.png"
+                              class="d-block w-100"
+                              alt="EventPal Events"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal User Screenshots/LOGIN.png"
+                              class="d-block w-100"
+                              alt="EventPal Events"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal Admin Screenshots/APPOINTMENTS.png"
+                              class="d-block w-100"
+                              alt="Admin Dashboard"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal Admin Screenshots/DASH.png"
+                              class="d-block w-100"
+                              alt="User Management"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal Admin Screenshots/MANAGE-EVENTS.png"
+                              class="d-block w-100"
+                              alt="User Management"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal Admin Screenshots/PDF-REPORTS.png"
+                              class="d-block w-100"
+                              alt="User Management"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Eventpal Admin Screenshots/UPDATE-PAST-EVENTS.png"
+                              class="d-block w-100"
+                              alt="User Management"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#eventpalCarousel"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#eventpalCarousel"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Task Management System -->
+            <div class="col-lg-10">
+              <div class="card shadow rounded-4 border-0 project-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6 project-img-container">
+                    <img
+                      src="assets/Task System Screenshots/DASHBOARD.png"
+                      alt="Task Management System"
+                      class="project-img"
+                    />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="project-content">
+                      <h2 class="fw-bolder mb-3">Task Management System</h2>
+                      <p class="mb-4">
+                        A complete task management solution with user roles,
+                        task assignment, progress tracking, and reporting
+                        features for teams and individuals.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary tech-badge">Laravel</span>
+                        <span class="badge bg-secondary tech-badge">Blade</span>
+                        <span class="badge bg-success tech-badge"
+                          >Bootstrap</span
+                        >
+                        <span class="badge bg-info tech-badge">PHP</span>
+                        <span class="badge bg-warning tech-badge">MySQL</span>
+                      </div>
+
+                      <!-- Task System Carousel -->
+                      <div
+                        id="taskSystemCarousel"
+                        class="carousel slide mt-4"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="3"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner rounded-3">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/Task System Screenshots/DASHBOARD.png"
+                              class="d-block w-100"
+                              alt="Task Dashboard"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task System Screenshots/TASKS.png"
+                              class="d-block w-100"
+                              alt="Task List"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task System Screenshots/ADMIN DASHBOARD.png"
+                              class="d-block w-100"
+                              alt="Admin Dashboard"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task System Screenshots/USER MANAGEMENT.png"
+                              class="d-block w-100"
+                              alt="User Management"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#taskSystemCarousel"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#taskSystemCarousel"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Call to action section-->
       <section class="py-5 bg-gradient-primary-to-secondary text-white">
         <div class="container px-5 my-5">
