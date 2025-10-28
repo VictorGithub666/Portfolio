@@ -65,6 +65,7 @@
         border-radius: 0.5rem;
         border: 1px solid #dee2e6;
         transition: transform 0.3s ease;
+        cursor: pointer;
       }
       .screenshot-gallery img:hover {
         transform: scale(1.02);
@@ -106,6 +107,45 @@
       .tech-badge {
         font-size: 0.85rem;
         padding: 0.35rem 0.75rem;
+      }
+
+      /* Image Modal Styles */
+      .image-modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 1200px;
+      }
+      .close-modal {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      .close-modal:hover,
+      .close-modal:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .carousel-item img {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -185,7 +225,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="http://new.kmstudyville.com/"
+                          href="https://new.kmsuidyville.com/"
                           class="btn btn-primary btn-project"
                           target="_blank"
                           >View Project</a
@@ -204,7 +244,7 @@
                   <div class="col-md-6 project-img-container">
                     <img
                       src="assets/yurei.png"
-                      alt="CNR Project"
+                      alt="YUREI Project"
                       class="project-img"
                     />
                   </div>
@@ -227,7 +267,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="https://qnr-1.onrender.com/"
+                          href="https://yurei.co.ke/"
                           class="btn btn-primary btn-project"
                           target="_blank"
                           >View Project</a
@@ -246,7 +286,7 @@
                   <div class="col-md-6 project-img-container">
                     <img
                       src="assets/hovermode.png"
-                      alt="CNR Project"
+                      alt="HoverMode Project"
                       class="project-img"
                     />
                   </div>
@@ -267,7 +307,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="https://www.hovermode.co.ke"
+                          href="https://hovermode.co.ke/"
                           class="btn btn-primary btn-project"
                           target="_blank"
                           >View Project</a
@@ -296,7 +336,7 @@
                 <div class="row g-0 h-100">
                   <div class="col-md-6 project-img-container">
                     <img
-                      src="assets/Eventpal User Screenshots/DASHBOARD.png"
+                      src="assets/Eventpal User Screenshots/HOME.png"
                       alt="EventPal Project"
                       class="project-img"
                     />
@@ -349,83 +389,129 @@
                             data-bs-target="#eventpalCarousel"
                             data-bs-slide-to="3"
                           ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="4"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="5"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="6"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="7"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="8"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="9"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#eventpalCarousel"
+                            data-bs-slide-to="10"
+                          ></button>
                         </div>
                         <div class="carousel-inner rounded-3">
                           <div class="carousel-item active">
                             <img
+                              src="assets/Eventpal User Screenshots/HOME.png"
+                              class="d-block w-100"
+                              alt="EventPal Dashboard"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
                               src="assets/Eventpal User Screenshots/DASHBOARD.png"
                               class="d-block w-100"
                               alt="EventPal Dashboard"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal User Screenshots/LOGIN.png"
                               class="d-block w-100"
-                              alt="EventPal Events"
+                              alt="EventPal Login"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal User Screenshots/PASTEVENTS.png"
                               class="d-block w-100"
-                              alt="EventPal Events"
+                              alt="EventPal Past Events"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal User Screenshots/REGISTER.png"
                               class="d-block w-100"
-                              alt="EventPal Events"
+                              alt="EventPal Register"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal User Screenshots/UPCOMING EVENTS.png"
                               class="d-block w-100"
-                              alt="EventPal Events"
-                            />
-                          </div>
-                          <div class="carousel-item">
-                            <img
-                              src="assets/Eventpal User Screenshots/LOGIN.png"
-                              class="d-block w-100"
-                              alt="EventPal Events"
+                              alt="EventPal Upcoming Events"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal Admin Screenshots/APPOINTMENTS.png"
                               class="d-block w-100"
-                              alt="Admin Dashboard"
+                              alt="Admin Appointments"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal Admin Screenshots/DASH.png"
                               class="d-block w-100"
-                              alt="User Management"
+                              alt="Admin Dashboard"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal Admin Screenshots/MANAGE-EVENTS.png"
                               class="d-block w-100"
-                              alt="User Management"
+                              alt="Admin Manage Events"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal Admin Screenshots/PDF-REPORTS.png"
                               class="d-block w-100"
-                              alt="User Management"
+                              alt="Admin PDF Reports"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
                               src="assets/Eventpal Admin Screenshots/UPDATE-PAST-EVENTS.png"
                               class="d-block w-100"
-                              alt="User Management"
+                              alt="Admin Update Past Events"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                         </div>
@@ -460,7 +546,7 @@
                 <div class="row g-0 h-100">
                   <div class="col-md-6 project-img-container">
                     <img
-                      src="assets/Task System Screenshots/DASHBOARD.png"
+                      src="assets/Task Management/User/HOME.png"
                       alt="Task Management System"
                       class="project-img"
                     />
@@ -511,34 +597,132 @@
                             data-bs-target="#taskSystemCarousel"
                             data-bs-slide-to="3"
                           ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="4"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="5"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="6"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="7"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="8"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#taskSystemCarousel"
+                            data-bs-slide-to="9"
+                          ></button>
                         </div>
                         <div class="carousel-inner rounded-3">
                           <div class="carousel-item active">
                             <img
-                              src="assets/Task System Screenshots/DASHBOARD.png"
+                              src="assets/Task Management/User/HOME.png"
                               class="d-block w-100"
-                              alt="Task Dashboard"
+                              alt="Task Home"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
-                              src="assets/Task System Screenshots/TASKS.png"
+                              src="assets/Task Management/User/LOGIN.png"
                               class="d-block w-100"
-                              alt="Task List"
+                              alt="Task Login"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
-                              src="assets/Task System Screenshots/ADMIN DASHBOARD.png"
+                              src="assets/Task Management/User/USER-DASH.png"
+                              class="d-block w-100"
+                              alt="User Dashboard"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/User/PENDING-TASKS.png"
+                              class="d-block w-100"
+                              alt="Pending Tasks"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/User/COMPLETED-TASKS.png"
+                              class="d-block w-100"
+                              alt="Completed Tasks"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/User/TASK-DETAILS.png"
+                              class="d-block w-100"
+                              alt="Task Details"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/User/PROFILE-EDIT.png"
+                              class="d-block w-100"
+                              alt="Profile Edit"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/Admin/ADMIN-DASH.png"
                               class="d-block w-100"
                               alt="Admin Dashboard"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                           <div class="carousel-item">
                             <img
-                              src="assets/Task System Screenshots/USER MANAGEMENT.png"
+                              src="assets/Task Management/Admin/ADD-EMPLOYEE.png"
                               class="d-block w-100"
-                              alt="User Management"
+                              alt="Add Employee"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/Admin/EMPLOYEE-LIST.png"
+                              class="d-block w-100"
+                              alt="Employee List"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/Admin/REPORTS&FILTERS.png"
+                              class="d-block w-100"
+                              alt="Reports & Filters"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/Task Management/Admin/PDF-REPORT.png"
+                              class="d-block w-100"
+                              alt="PDF Report"
+                              onclick="openModal(this.src)"
                             />
                           </div>
                         </div>
@@ -566,9 +750,300 @@
                 </div>
               </div>
             </div>
+
+            <!-- MaChickens ERP System -->
+            <div class="col-lg-10">
+              <div class="card shadow rounded-4 border-0 project-card h-100">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6 project-img-container">
+                    <img
+                      src="assets/ERP-ADMIN-SIDE/DASH.png"
+                      alt="MaChickens ERP System"
+                      class="project-img"
+                    />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="project-content">
+                      <h2 class="fw-bolder mb-3">MaChickens ERP System</h2>
+                      <p class="mb-4">
+                        A comprehensive Enterprise Resource Planning system for
+                        poultry management with admin and employee panels.
+                        Features include client management, order tracking,
+                        supply deliveries, and financial reporting.
+                      </p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary tech-badge">Laravel</span>
+                        <span class="badge bg-secondary tech-badge">Blade</span>
+                        <span class="badge bg-success tech-badge"
+                          >Bootstrap</span
+                        >
+                        <span class="badge bg-info tech-badge">PHP</span>
+                        <span class="badge bg-warning tech-badge">MySQL</span>
+                      </div>
+
+                      <!-- MaChickens Carousel -->
+                      <div
+                        id="machickensCarousel"
+                        class="carousel slide mt-4"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-indicators">
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="1"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="2"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="3"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="4"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="5"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="6"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="7"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="8"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="9"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="10"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="11"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="12"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="13"
+                          ></button>
+                          <button
+                            type="button"
+                            data-bs-target="#machickensCarousel"
+                            data-bs-slide-to="14"
+                          ></button>
+                        </div>
+                        <div class="carousel-inner rounded-3">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/DASH.png"
+                              class="d-block w-100"
+                              alt="ERP Admin Dashboard"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/LOGIN.png"
+                              class="d-block w-100"
+                              alt="ERP Login"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/CLIENTS.png"
+                              class="d-block w-100"
+                              alt="ERP Clients"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/SUPPLIERS.png"
+                              class="d-block w-100"
+                              alt="ERP Suppliers"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/EMPLOYEES.png"
+                              class="d-block w-100"
+                              alt="ERP Employees"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/ORDERS.png"
+                              class="d-block w-100"
+                              alt="ERP Orders"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/SUPPLY-DELIVERIES.png"
+                              class="d-block w-100"
+                              alt="ERP Supply Deliveries"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/CASHFLOW-RECORDS.png"
+                              class="d-block w-100"
+                              alt="ERP Cashflow Records"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/CASHFLOW-REPORTS.png"
+                              class="d-block w-100"
+                              alt="ERP Cashflow Reports"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-ADMIN-SIDE/REPORTS-DASH.png"
+                              class="d-block w-100"
+                              alt="ERP Reports Dashboard"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/LOGIN.png"
+                              class="d-block w-100"
+                              alt="ERP User Login"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/HOME.png"
+                              class="d-block w-100"
+                              alt="ERP User Home"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/DASH.png"
+                              class="d-block w-100"
+                              alt="ERP User Dashboard"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/CLIENT-DELIVERIES.png"
+                              class="d-block w-100"
+                              alt="ERP Client Deliveries"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/SUPPLY-DELIVERIES.png"
+                              class="d-block w-100"
+                              alt="ERP Supply Deliveries"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/UPDATE-CLIENT-DELIVERIES.png"
+                              class="d-block w-100"
+                              alt="ERP Update Client Deliveries"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/UPDATE-SUPPLY-DELIVERIES.png"
+                              class="d-block w-100"
+                              alt="ERP Update Supply Deliveries"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/ERP-USER-SIDE/PROFILE-MANAGEMENT.png"
+                              class="d-block w-100"
+                              alt="ERP Profile Management"
+                              onclick="openModal(this.src)"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#machickensCarousel"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#machickensCarousel"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Image Modal -->
+      <div id="imageModal" class="image-modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
 
       <!-- Call to action section-->
       <section class="py-5 bg-gradient-primary-to-secondary text-white">
@@ -593,14 +1068,16 @@
           class="row align-items-center justify-content-between flex-column flex-sm-row"
         >
           <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Victor Kasini 2025</div>
+            <div class="small m-0">
+              Copyright &copy; Victor Kivungi Kasini 2024
+            </div>
           </div>
           <div class="col-auto">
-            <a class="small" href="tel:+254793049705">0793049705</a>
+            <a class="small" href="#!">Privacy</a>
             <span class="mx-1">&middot;</span>
-            <a class="small" href="mailto:kivungijr@gmail.com"
-              >kivungijr@gmail.com</a
-            >
+            <a class="small" href="#!">Terms</a>
+            <span class="mx-1">&middot;</span>
+            <a class="small" href="#!">Contact</a>
           </div>
         </div>
       </div>
@@ -609,5 +1086,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+      // Image Modal Functionality
+      function openModal(src) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = src;
+      }
+
+      function closeModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+
+      // Close modal when clicking outside the image
+      window.onclick = function (event) {
+        const modal = document.getElementById("imageModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeModal();
+        }
+      });
+    </script>
   </body>
 </html>
