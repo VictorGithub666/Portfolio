@@ -6,10 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="description"
-      content="Victor Kivungi Kasini - Resume and Experience"
-    />
+    <meta name="description" content="Victor Kivungi Kasini - Resume" />
     <meta name="author" content="Victor Kivungi Kasini" />
     <title>Resume - Victor Kasini</title>
     <!-- Favicon-->
@@ -43,36 +40,6 @@
       .education-item:last-child {
         border-bottom: none;
       }
-      .timeline {
-        position: relative;
-        padding-left: 2rem;
-      }
-      .timeline:before {
-        content: "";
-        position: absolute;
-        left: 7px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: #3a7bd5;
-      }
-      .timeline-item {
-        position: relative;
-        margin-bottom: 2rem;
-      }
-      .timeline-item:last-child {
-        margin-bottom: 0;
-      }
-      .timeline-item:before {
-        content: "";
-        position: absolute;
-        left: -2rem;
-        top: 5px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #3a7bd5;
-      }
       .skill-badge {
         font-size: 0.85rem;
         padding: 0.35rem 0.75rem;
@@ -81,16 +48,16 @@
       .resume-section {
         padding: 3rem 0;
       }
-      @media (max-width: 768px) {
-        .timeline {
-          padding-left: 1.5rem;
-        }
-        .timeline:before {
-          left: 5px;
-        }
-        .timeline-item:before {
-          left: -1.5rem;
-        }
+      .contact-info {
+        margin-bottom: 1rem;
+      }
+      .contact-info i {
+        width: 20px;
+        margin-right: 10px;
+      }
+      .language-item,
+      .hobby-item {
+        margin-bottom: 0.5rem;
       }
     </style>
   </head>
@@ -140,18 +107,48 @@
         </div>
         <div class="row gx-5 justify-content-center">
           <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <!-- Profile Section -->
+            <section class="resume-section">
+              <div
+                class="d-flex align-items-center justify-content-between mb-4"
+              >
+                <h2 class="text-primary fw-bolder mb-0">Profile</h2>
+              </div>
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <p class="mb-0">
+                    I am a dedicated Full Stack Developer proficient in HTML,
+                    CSS, Bootstrap, ReactJs, JavaScript, Node.js, Express.js,
+                    Laravel and database management. With a strong focus on
+                    creating efficient, user-friendly web applications, I excel
+                    in both frontend design and backend development. Passionate
+                    about problem-solving and staying updated with industry
+                    trends, I deliver robust solutions that meet client and
+                    business needs.
+                  </p>
+                </div>
+              </div>
+            </section>
+
             <!-- Experience Section-->
             <section class="resume-section">
               <div
                 class="d-flex align-items-center justify-content-between mb-4"
               >
-                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                <h2 class="text-primary fw-bolder mb-0">
+                  Professional Experience
+                </h2>
                 <!-- Download resume button-->
-                <a class="btn btn-primary px-4 py-3" href="#!">
+                <a
+                  class="btn btn-primary px-4 py-3"
+                  href="/assets/Victor-Kivungi-FullStack.pdf"
+                  target="_blank"
+                >
                   <div class="d-inline-block bi bi-download me-2"></div>
                   Download Resume
                 </a>
               </div>
+
               <!-- Experience Card 1-->
               <div class="card shadow border-0 rounded-4 mb-5">
                 <div class="card-body p-5">
@@ -159,42 +156,36 @@
                     <div class="col text-center text-lg-start mb-4 mb-lg-0">
                       <div class="bg-light p-4 rounded-4">
                         <div class="text-primary fw-bolder mb-2">
-                          2023 - Present
+                          July 2024 - August 2024
                         </div>
-                        <div class="small fw-bolder">Web Developer</div>
-                        <div class="small text-muted">Kafoca</div>
+                        <div class="small fw-bolder">Website Developer</div>
+                        <div class="small text-muted">
+                          Karoca Mukuru Studyville
+                        </div>
                         <div class="small text-muted">Nairobi, Kenya</div>
                       </div>
                     </div>
                     <div class="col-lg-8">
                       <div>
-                        As a Web Developer at Kafoca, I specialize in creating
-                        responsive and user-friendly web applications. My
-                        responsibilities include:
                         <ul class="mt-3">
-                          <li>
-                            Developing and maintaining the company's main
-                            website and internal systems
-                          </li>
-                          <li>
-                            Implementing responsive designs using HTML, CSS, and
-                            JavaScript
-                          </li>
-                          <li>
-                            Collaborating with the design team to ensure
-                            seamless user experiences
-                          </li>
-                          <li>
-                            Optimizing website performance and ensuring
-                            cross-browser compatibility
-                          </li>
-                          <li>Integrating third-party APIs and services</li>
+                          <li>Design the website</li>
+                          <li>Organise Photoshoot for website pictures</li>
+                          <li>Integrate Website with Strapi CMS</li>
                         </ul>
+                        <div class="mt-3">
+                          <strong>Link:</strong>
+                          <a
+                            href="https://new.kmsuidyville.com/"
+                            target="_blank"
+                            >https://new.kmsuidyville.com/</a
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <!-- Experience Card 2-->
               <div class="card shadow border-0 rounded-4 mb-5">
                 <div class="card-body p-5">
@@ -202,39 +193,95 @@
                     <div class="col text-center text-lg-start mb-4 mb-lg-0">
                       <div class="bg-light p-4 rounded-4">
                         <div class="text-primary fw-bolder mb-2">
-                          2022 - 2023
+                          June 2025 - July 2025
                         </div>
-                        <div class="small fw-bolder">Junior Web Developer</div>
-                        <div class="small text-muted">Freelance</div>
+                        <div class="small fw-bolder">Website Developer</div>
+                        <div class="small text-muted">Hovermode Limited</div>
+                        <div class="small text-muted">Nairobi, Kenya</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        <ul class="mt-3">
+                          <li>Design the website</li>
+                          <li>Develop the Website</li>
+                          <li>Website Maintenance</li>
+                          <li>Hosting</li>
+                        </ul>
+                        <div class="mt-3">
+                          <strong>Link:</strong>
+                          <a href="https://hovermode.co.ke/" target="_blank"
+                            >https://hovermode.co.ke/</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience Card 3-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-primary fw-bolder mb-2">
+                          June 2025 - Present
+                        </div>
+                        <div class="small fw-bolder">Website Developer</div>
+                        <div class="small text-muted">
+                          Youth Rescue and Empowerment Initiative
+                        </div>
                         <div class="small text-muted">Remote</div>
                       </div>
                     </div>
                     <div class="col-lg-8">
                       <div>
-                        During my time as a freelance developer, I worked on
-                        various projects for clients across different
-                        industries. My key contributions included:
                         <ul class="mt-3">
-                          <li>
-                            Building custom websites and web applications from
-                            scratch
-                          </li>
-                          <li>
-                            Creating e-commerce solutions with payment
-                            integration
-                          </li>
-                          <li>
-                            Developing responsive designs that work across all
-                            devices
-                          </li>
-                          <li>
-                            Providing ongoing maintenance and support for client
-                            websites
-                          </li>
-                          <li>
-                            Implementing SEO best practices to improve search
-                            engine rankings
-                          </li>
+                          <li>Design the website</li>
+                          <li>Mpesa Integration</li>
+                          <li>Admin Panel</li>
+                          <li>Develop the Website</li>
+                          <li>Website Maintenance</li>
+                          <li>Hosting</li>
+                        </ul>
+                        <div class="mt-3">
+                          <strong>Link:</strong>
+                          <a href="https://yurei.co.ke/" target="_blank"
+                            >https://yurei.co.ke/</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience Card 4-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-primary fw-bolder mb-2">
+                          August 2025 - Present
+                        </div>
+                        <div class="small fw-bolder">System Developer</div>
+                        <div class="small text-muted">
+                          MaChickens ERP System
+                        </div>
+                        <div class="small text-muted">Remote</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        <ul class="mt-3">
+                          <li>Design the System</li>
+                          <li>Admin Panel</li>
+                          <li>Employee Panel</li>
+                          <li>Develop the System</li>
+                          <li>Hosting</li>
                         </ul>
                       </div>
                     </div>
@@ -248,6 +295,7 @@
             <!-- Education Section-->
             <section class="resume-section">
               <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+
               <!-- Education Card 1-->
               <div class="card shadow border-0 rounded-4 mb-5">
                 <div class="card-body p-5">
@@ -255,95 +303,125 @@
                     <div class="col text-center text-lg-start mb-4 mb-lg-0">
                       <div class="bg-light p-4 rounded-4">
                         <div class="text-secondary fw-bolder mb-2">
-                          2021 - 2023
+                          Jan 2024 - September 2025
                         </div>
                         <div class="mb-2">
                           <div class="small fw-bolder">
-                            Kirinyaga University
+                            Diploma in Software Development
                           </div>
-                          <div class="small text-muted">Kirinyaga, Kenya</div>
-                        </div>
-                        <div class="fst-italic">
-                          <div class="small text-muted">Diploma</div>
                           <div class="small text-muted">
-                            Information Communication Technology
+                            Institute of Software Technologies
                           </div>
+                          <div class="small text-muted">Nairobi, Kenya</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-8">
                       <div>
-                        During my diploma studies in Information Communication
-                        Technology, I gained comprehensive knowledge in:
-                        <ul class="mt-3">
-                          <li>
-                            Web development technologies including HTML, CSS,
-                            JavaScript, and PHP
-                          </li>
-                          <li>
-                            Database management systems, particularly MySQL
-                          </li>
-                          <li>
-                            Network administration and cybersecurity principles
-                          </li>
-                          <li>Software engineering methodologies</li>
-                          <li>
-                            Project management and teamwork in IT environments
-                          </li>
-                        </ul>
-                        This program provided me with both theoretical knowledge
-                        and practical skills that I've applied in my
-                        professional work.
+                        Currently pursuing a comprehensive diploma program
+                        focused on modern software development practices, web
+                        technologies, and programming fundamentals.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <!-- Education Card 2-->
-              <div class="card shadow border-0 rounded-4">
+              <div class="card shadow border-0 rounded-4 mb-5">
                 <div class="card-body p-5">
                   <div class="row align-items-center gx-5">
                     <div class="col text-center text-lg-start mb-4 mb-lg-0">
                       <div class="bg-light p-4 rounded-4">
-                        <div class="text-secondary fw-bolder mb-2">
-                          2016 - 2019
-                        </div>
+                        <div class="text-secondary fw-bolder mb-2">2021</div>
                         <div class="mb-2">
-                          <div class="small fw-bolder">
-                            Moi High School Kabarak
-                          </div>
-                          <div class="small text-muted">Nakuru, Kenya</div>
-                        </div>
-                        <div class="fst-italic">
-                          <div class="small text-muted">High School</div>
-                          <div class="small text-muted">KCSE Certificate</div>
+                          <div class="small fw-bolder">CCNA (200-301)</div>
+                          <div class="small text-muted">Network Walks</div>
                         </div>
                       </div>
                     </div>
                     <div class="col-lg-8">
                       <div>
-                        My high school education provided me with a strong
-                        foundation in:
-                        <ul class="mt-3">
-                          <li>
-                            Mathematics and Sciences which developed my
-                            analytical thinking
-                          </li>
-                          <li>
-                            Computer Studies where I first discovered my passion
-                            for technology
-                          </li>
-                          <li>
-                            Communication skills through languages and
-                            literature
-                          </li>
-                          <li>
-                            Problem-solving techniques that I apply in my
-                            development work
-                          </li>
-                        </ul>
-                        This period was crucial in shaping my interest in
-                        technology and programming.
+                        Completed Cisco Certified Network Associate
+                        certification covering networking fundamentals, IP
+                        connectivity, security fundamentals, and automation.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Card 3-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">2020</div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">Agri business</div>
+                          <div class="small text-muted">Kenya</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        Studied agricultural business principles and practices
+                        in the Kenyan context.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Card 4-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">2019</div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">
+                            Kenya Certificate of Secondary Education
+                          </div>
+                          <div class="small text-muted">Mukaa School</div>
+                          <div class="small text-muted">Makueni, Kenya</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        Completed secondary education with focus on sciences,
+                        mathematics, and technical subjects.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education Card 5-->
+              <div class="card shadow border-0 rounded-4">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">2014</div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">
+                            Kenya Certificate of Primary Education
+                          </div>
+                          <div class="small text-muted">
+                            St. Elizabeth Primary School
+                          </div>
+                          <div class="small text-muted">Makueni, Kenya</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        Completed primary education with strong foundation in
+                        core subjects.
                       </div>
                     </div>
                   </div>
@@ -355,103 +433,117 @@
 
             <!-- Skills Section-->
             <section class="resume-section">
-              <h2 class="text-secondary fw-bolder mb-4">Skills</h2>
-              <div class="card shadow border-0 rounded-4 mb-5">
-                <div class="card-body p-5">
-                  <!-- Professional skills list-->
-                  <div class="mb-5">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-tools"></i>
-                      </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline"
-                          >Professional Skills</span
+              <h2 class="text-secondary fw-bolder mb-4">Skills & Languages</h2>
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <div class="card shadow border-0 rounded-4 h-100">
+                    <div class="card-body p-5">
+                      <h4 class="fw-bolder mb-3">Technical Skills</h4>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary skill-badge"
+                          >Laravel</span
                         >
-                      </h3>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3 mb-4">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                        <span class="badge bg-primary skill-badge">PHP</span>
+                        <span class="badge bg-primary skill-badge"
+                          >ReactJS</span
                         >
-                          Web Development
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                        <span class="badge bg-primary skill-badge"
+                          >JavaScript</span
                         >
-                          Responsive Design
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                        <span class="badge bg-secondary skill-badge"
+                          >HTML & CSS</span
                         >
-                          UI/UX Design
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                        <span class="badge bg-secondary skill-badge"
+                          >Bootstrap</span
                         >
-                          Database Management
-                        </div>
-                      </div>
-                      <div class="col mb-4 mb-md-0">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                        <span class="badge bg-secondary skill-badge"
+                          >NodeJs</span
                         >
-                          API Integration
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div
-                          class="d-flex align-items-center bg-light rounded-4 p-3 h-100"
+                        <span class="badge bg-secondary skill-badge"
+                          >ExpressJs</span
                         >
-                          Project Management
-                        </div>
+                        <span class="badge bg-success skill-badge">MySQL</span>
+                        <span class="badge bg-success skill-badge"
+                          >MongoDB</span
+                        >
+                        <span class="badge bg-success skill-badge"
+                          >State Management</span
+                        >
                       </div>
                     </div>
                   </div>
-                  <!-- Languages list-->
-                  <div class="mb-0">
-                    <div class="d-flex align-items-center mb-4">
-                      <div
-                        class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"
-                      >
-                        <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="col-lg-6 mb-5">
+                  <div class="card shadow border-0 rounded-4 h-100">
+                    <div class="card-body p-5">
+                      <h4 class="fw-bolder mb-3">Languages</h4>
+                      <div class="language-item">
+                        <strong>Swahili:</strong> Native proficiency
                       </div>
-                      <h3 class="fw-bolder mb-0">
-                        <span class="text-gradient d-inline">Languages</span>
-                      </h3>
+                      <div class="language-item">
+                        <strong>English:</strong> Professional proficiency
+                      </div>
+
+                      <h4 class="fw-bolder mt-4 mb-3">Hobbies</h4>
+                      <div class="hobby-item">
+                        <i class="bi bi-code-slash text-primary"></i> Coding
+                      </div>
+                      <div class="hobby-item">
+                        <i class="bi bi-controller text-primary"></i> Soccer
+                      </div>
+                      <div class="hobby-item">
+                        <i class="bi bi-joystick text-primary"></i> Gaming
+                      </div>
+                      <div class="hobby-item">
+                        <i class="bi bi-geo-alt text-primary"></i> Travelling
+                      </div>
                     </div>
-                    <div class="d-flex flex-wrap gap-2">
-                      <span class="badge bg-primary skill-badge">HTML</span>
-                      <span class="badge bg-primary skill-badge">CSS</span>
-                      <span class="badge bg-primary skill-badge"
-                        >JavaScript</span
-                      >
-                      <span class="badge bg-primary skill-badge">PHP</span>
-                      <span class="badge bg-secondary skill-badge"
-                        >Laravel</span
-                      >
-                      <span class="badge bg-secondary skill-badge"
-                        >ReactJS</span
-                      >
-                      <span class="badge bg-secondary skill-badge"
-                        >Bootstrap</span
-                      >
-                      <span class="badge bg-secondary skill-badge">MySQL</span>
-                      <span class="badge bg-success skill-badge">Git</span>
-                      <span class="badge bg-success skill-badge"
-                        >REST APIs</span
-                      >
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <!-- References Section -->
+            <section class="resume-section">
+              <h2 class="text-secondary fw-bolder mb-4">References</h2>
+              <div class="row">
+                <div class="col-lg-4 mb-4">
+                  <div class="card shadow border-0 rounded-4 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold">Kellen Kabii</h5>
+                      <p class="mb-2">CEO KAFOCA MUKURU STUDYVILLE</p>
+                      <p class="mb-0">
+                        <i class="bi bi-telephone text-primary"></i>
+                        +254721447444
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card shadow border-0 rounded-4 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold">Jimmy</h5>
+                      <p class="mb-2">MANAGING DIRECTOR, HOVERMODE</p>
+                      <p class="mb-0">
+                        <i class="bi bi-telephone text-primary"></i>
+                        +254723281997
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card shadow border-0 rounded-4 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold">Martin Kirigua</h5>
+                      <p class="mb-2">
+                        FOUNDER, YOUTH RESCUE AND EMPOWERMENT INITIATIVE
+                      </p>
+                      <p class="mb-0">
+                        <i class="bi bi-telephone text-primary"></i>
+                        +254715443024
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -473,11 +565,18 @@
             </div>
           </div>
           <div class="col-auto">
-            <a class="small" href="#!">Privacy</a>
+            <a class="small" href="tel:+254793049705">+254793049705</a>
             <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Terms</a>
+            <a class="small" href="mailto:kivungijr@gmail.com"
+              >kivungijr@gmail.com</a
+            >
             <span class="mx-1">&middot;</span>
-            <a class="small" href="#!">Contact</a>
+            <a
+              class="small"
+              href="https://portfolio-aaiq.onrender.com/"
+              target="_blank"
+              >Portfolio</a
+            >
           </div>
         </div>
       </div>
